@@ -8,9 +8,8 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>25</maven.compiler.release>
-    <!-- use the LTS JavaFX that actually exists -->
     <javafx.version>25.0.1</javafx.version>
-    <main.class>MyFirstGUI</main.class>
+    <main.class>com.arayaphong.myfirstgui.MyFirstGUI</main.class>
   </properties>
 
   <dependencies>
@@ -27,18 +26,6 @@
   </dependencies>
 
   <build>
-    <sourceDirectory>${project.basedir}</sourceDirectory>
-    <resources>
-      <resource>
-        <directory>${project.basedir}</directory>
-        <includes>
-          <include>dark.css</include>
-          <include>*.gif</include>
-          <include>*.GIF</include>
-        </includes>
-      </resource>
-    </resources>
-
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
