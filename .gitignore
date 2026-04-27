@@ -1,0 +1,9 @@
+target/
+out/
+dist/
+
+*.class
+*.jar
+*.tar.gz
+
+.codex
