@@ -6,8 +6,9 @@ PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 cd "$PROJECT_ROOT"
 
 export JAVA_HOME=/usr/lib/jvm/java-25-openjdk
+export PATH="$JAVA_HOME/bin:$PATH"
 
-echo "Building MyFirstGUI with Maven (JDK 25 + JavaFX 25.0.3)..."
+echo "Building MyFirstGUI with Maven (JDK 25 + JavaFX 25.0.1)..."
 
 # clean old manual build
 rm -f MyFirstGUI.jar MyFirstGUI.class

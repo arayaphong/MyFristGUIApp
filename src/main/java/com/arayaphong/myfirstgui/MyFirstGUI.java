@@ -1,3 +1,5 @@
+package com.arayaphong.myfirstgui;
+
 import java.util.Locale;
 import java.util.Objects;
 
@@ -44,7 +46,7 @@ public class MyFirstGUI extends Application {
         primaryStage = stage;
         var label = new Label("สวัสดี! นี่คือ GUI ตัวแรกของฉัน");
 
-        var gifUrl = Objects.requireNonNull(getClass().getResource("กระดึ๊บ.gif"));
+        var gifUrl = Objects.requireNonNull(getClass().getResource("/กระดึ๊บ.gif"));
         var gifView = new ImageView(new Image(gifUrl.toExternalForm()));
 
         var exitButton = new Button("ออก");
@@ -60,7 +62,7 @@ public class MyFirstGUI extends Application {
         var scene = new Scene(root, 420, 360);
 
         // ใช้ธีม Dark/Light ตามการตั้งค่าระบบ
-        var darkCss = Objects.requireNonNull(getClass().getResource("dark.css")).toExternalForm();
+        var darkCss = Objects.requireNonNull(getClass().getResource("/dark.css")).toExternalForm();
         if (Platform.getPreferences().getColorScheme() == ColorScheme.DARK) {
             scene.getStylesheets().add(darkCss);
         }

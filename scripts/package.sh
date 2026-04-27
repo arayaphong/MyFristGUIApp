@@ -18,10 +18,6 @@ FX_MODS="$M2/javafx-controls/$FX_VER/javafx-controls-$FX_VER.jar:$M2/javafx-cont
 
 echo "Using JavaFX $FX_VER from Maven cache"
 
-# bundle assets alongside the jar so jpackage includes them in lib/
-cp "$PROJECT_ROOT/dark.css" "$OUT_DIR/dark.css"
-cp "$PROJECT_ROOT/กระดึ๊บ.gif" "$OUT_DIR/กระดึ๊บ.gif"
-
 rm -rf "$DIST_DIR"; mkdir -p "$DIST_DIR"
 
 jpackage \
@@ -29,7 +25,7 @@ jpackage \
   --name MyFirstGUI \
   --input "$OUT_DIR" \
   --main-jar MyFirstGUI.jar \
-  --main-class MyFirstGUI \
+  --main-class com.arayaphong.myfirstgui.MyFirstGUI \
   --module-path "$FX_MODS" \
   --add-modules javafx.controls,javafx.graphics \
   --java-options "--enable-native-access=javafx.graphics" \

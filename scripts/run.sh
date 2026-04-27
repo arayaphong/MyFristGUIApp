@@ -25,4 +25,4 @@ java --module-path "$FX_MODS" \
      --add-modules javafx.controls \
      --enable-native-access=javafx.graphics \
      -cp "$OUT_JAR" \
-     MyFirstGUI
+     com.arayaphong.myfirstgui.MyFirstGUI
